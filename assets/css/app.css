@@ -190,3 +190,11 @@ p, ul li, ol li {
   margin-bottom: 5px;
   padding-bottom: 10px;
 }
+
+
+.card-title{
+  visibility: hidden;
+}
+.card:hover .card-body .card-title {
+  visibility: visible;
+}
