@@ -1,0 +1,42 @@
+[
+  {
+	"id": "1",
+    "title": "Tiramisu",
+    "desc": "finest italian dessert",
+    "img": "tiramisu.jpg",
+    "pic_desc": "Tiramisu on plate",
+    "instruction": " Make espresso coffee, let it cool a bit. Separate the egg yolks and the whites of two eggs in two bowls. Beat sugar into the egg yolks. Beat the Mascarpone into the sweetened yolks. Add two more egg whites to the other two and whisk until they form stiff peaks. Fold gently egg whites into Mascarpone mixture. Quickly dip both sides of the ladyfingers in the espresso. Layer soaked ladyfingers and Mascarpone in a large bowl or pan (start with fingers, finish with mascarpone). Sprinkle unsweetened cocoa powder on top just befor to serve. Refrigerate for one hour or two.",
+    "dish_up": "",
+    "ingredients": ["4egg whites", "2egg yolks", "100g sugar", "500g macarpone cheese", "4small coffee cups espresso", "400g lady finters"]
+  },
+  {
+	"id": "2",
+    "title": "Berliner",
+    "desc": "The real german Berliner",
+    "img": "berliner.jpg",
+    "pic_desc": "Berliner on table",
+    "instruction": " Melt butter in a pan (or in a pyrex cup in the microwave) and add to milk. Check the temperature... it should be around 110-115 degrees Fahrenheit (hotter will kill the yeast, colder won't activate it) Stir in the Sugar Stir in the dried yeast. Let sit for 5 minutes until it begins to bubble so you know the yeast is active. Sift flour into a mixing bowl. Pour in the milk/butter/yeast mixture. Add the vanilla, salt and eggs. Mix to combine into a sticky dough. Then Knead (by hand or with a dough hook) for 5 minutes. Put the kneaded dough into a bowl, cover with plastic wrap, and set in a warm place to rise. It will take about an hour, and will double in size. When dough is doubled...Lightly flour the counter, then take the dough out of the bowl, and knead it a few times. (Just pat it down, and give it a few kneads to wake it back up) Roll the dough about 1/2 inch thick Here is where you make a choice. I didn't have a smaller round cutter, so I cut mine with a glass. The glass was closer to 4 inches across, so I had BIG Berliner. Not really tragic, it just made fewer, and I had to cook them a few seconds longer. Cut out your rounds of dough, and place them on a cookie sheet. Re-roll the scraps and cut rounds out of the last bits (no waste!). These ones might look funny, so they are great for double checking cooking time! Cover the dough circles with a towel, and leave to rise for 30 minutes",
+    "dish_up": "",
+    "ingredients": ["1/2 cup Butter (1 stick) unsalted", "1/2 cup Milk (if it feels dry, add another 1/4 cup)", "2 1/4 tsp Dried Yeast","4 Tablespoons Sugar","4 cups / 500 gr. All Purpose Flour","1 tsp. Vanilla Extract","2 Eggs plus 1 Egg Yolk","1 tsp salt","Neutral oil (like Canola) for Frying","Granulated or Powdered Sugar for Coating","Your Favorite Seedless Jam or Pflaumenmuß for Filling"]
+  },
+  {
+	"id": "3",
+    "title": "Vegan Breakfast",
+    "desc": "The healthy start in the day",
+    "img": "vegan.jpg",
+    "pic_desc": "Vegan Breakfast",
+    "instruction": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "dish_up": "",
+    "ingredients": ["4 Lorem ipsum dolor", "4 teaspoons wholegrain mustard", "pinch of salt","freshly ground black pepper","8 thin slices bacon or pork belly","1 large yellow onion","4 gherkins","oil for frying","wooden toothpicks for securing"]
+  },
+  {
+	"id": "4",
+    "title": "Rinderrouladen",
+    "desc": "rustical german kitchen",
+    "img": "rinderrolade.jpg",
+    "pic_desc": "delicious Rinderrouladen in pan",
+    "instruction": "Spread the beef slices out on a large cutting board. Brush each slice with 1 teaspoon mustard and season with salt and pepper. Top each slice with 2 slices of bacon or pork belly. Peel and quarter the onion. Cut one quarter into four thick slices and place a slice of onion on each piece of meat. Top it with a gherkin. Finely chop the rest of the onion and distribute it over the meat pieces. Tightly roll the pieces up from the shortest side; secure the roll-ups with wooden toothpicks. Heat oil in a wide pan or pot; add the roll-ups and brown on all sides. Add enough stock to cover the roll-ups. Stir in 2 tablespoons mustard, chopped tomato, onion and red pepper. Bring to the boil; reduce heat to low and cook, covered, for 90 minutes. Turn the roll-ups over every so often. At the end of the cooking time, remove them from the pot and keep warm. Pour the sauce through a fine sieve into a saucepan. Discard the solids and bring sauce to the boil. Dilute 1 to 2 tablespoons cornflour in a few tablespoons cold water and whisk it into the sauce. Cook, whisking, until the sauce thickens. Season to taste with salt and pepper, adding more mustard or tomato puree if needed. When the sauce is to your liking, return the roll-ups to the pan and heat through before serving.",
+    "dish_up": "",
+    "ingredients": ["4 thin slices chuck steak, about 10x16cm each", "4 teaspoons wholegrain mustard", "pinch of salt","freshly ground black pepper","8 thin slices bacon or pork belly","1 large yellow onion","4 gherkins","oil for frying","wooden toothpicks for securing"]
+  }
+]
