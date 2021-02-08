@@ -83,14 +83,35 @@ function progressJSON(data){
    data.map( d => {
     console.log(d.title);
     document.querySelector("#test").innerHTML +=
-    `<div class="card flex-grow-1" id="${d.id}" style="width: 18rem;">
-    <img src="img/${d.img}" class="card-img-top" alt="img/tiramisu.jpg">
-    <div class="card-body">
-      <h5 class="card-title"> ${d.title} </h5>
-      <p class="card-text">${d.desc}</p>
-      <a href="${d.id}" class="btn btn-primary link"> Find the recept</a>
-    </div>
+
+
+   `<div class="card flex-grow-1" id="${d.id}" style="width: 18rem;" bg-dark text-white">
+        <img class="card-img" src="img/${d.img}" alt="img/${d.title}.jpg">
+        <div class="card-img-overlay d-flex flex-column">
+            
+            <h2 class=" card-title text-white p-x-5" style=" font-weight:700; background-color: rgba(87, 87, 87, 0.493);"><span class="mr-auto">${d.title}</span></h2>
+            <div class="mt-auto "><h2><p class="card-text " style="  font-weight:600; background-color: rgba(255, 255, 255, 0.6)">${d.desc}</p></h2></div>
+            <div class="row ">
+              <div class="col"> <a href="${d.id}" class="btn btn-primary link"> Find the recept</a>  
+              <button class="my-1 btn btn-secondary" type="submit" onclick="share('${d.source}')">Share</button>
+              </div>
+             
+            </div>
+        </div>
     </div>`
+
+
+
+    
+  /*  `<div class="card flex-grow-1" id="${d.id}" style="width: 18rem;">
+      <img src="img/${d.img}" class="card-img-top" alt="img/tiramisu.jpg">
+      <div class="card-body">
+        <h5 class="card-title"> ${d.title} </h5>
+        <p class="card-text">${d.desc}</p>
+        <a href="${d.id}" class="btn btn-primary link"> Find the recept</a>
+        <button onclick="share('${d.source}')">Share</button>
+      </div>
+    </div>` */
 
     ;
    });
@@ -114,7 +135,7 @@ function progressJSON(data){
   .then(response => response.json())
   .then(responseJSON => progressJSON(responseJSON));
 
-
+  const share = (link = "reference link missing") => alert(link);
 
 
 

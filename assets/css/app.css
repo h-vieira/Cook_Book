@@ -198,6 +198,9 @@ p, ul li, ol li {
 .card:hover .card-body .card-title {
   visibility: visible;
 }
+.card:hover .card-img-overlay .card-title {
+  visibility: visible;
+}
 
 .ingre{
   margin: 30px;
@@ -209,4 +212,32 @@ p, ul li, ol li {
 
 .dishup{
   justify-content: center;
+}
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;   
+}
+
+.btn-primary{
+  background-color:  rgba(7, 168, 120, 0.781);
+  border:none;
+  font-size: 1.2rem;
+}
+.btn-secondary{
+  background-color:  rgba(7, 168, 168, 0.781);
+  border:none;
+  font-size: 1.2rem;
+}
+
+
+.btn-primary:hover{
+  background-color:  rgba(7, 168, 120);
+ 
+}
+.btn-secondary:hover{
+  background-color:  rgba(7, 168, 168);
+ 
 }
