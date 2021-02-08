@@ -154,7 +154,7 @@ p, ul li, ol li {
 .footer_bottom p > i,
   .footer_bottom p > a:hover {
       color: #27ae60;
-  }	
+  }
 
   .social_links_area {
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -189,4 +189,24 @@ p, ul li, ol li {
   font-size: 13px;
   margin-bottom: 5px;
   padding-bottom: 10px;
+}
+
+
+.card-title{
+  visibility: hidden;
+}
+.card:hover .card-body .card-title {
+  visibility: visible;
+}
+
+.ingre{
+  margin: 30px;
+}
+
+.descr{
+  margin: 30px;
+}
+
+.dishup{
+  justify-content: center;
 }

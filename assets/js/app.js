@@ -1,4 +1,3 @@
-
 function handleRecept(id, all){
   document.getElementById("carouselExampleCaptions").style.visibility = "hidden"; 
   document.getElementById("carouselExampleCaptions").style.display ="none";
@@ -64,7 +63,6 @@ function handleRecept(id, all){
       </div>
     </div>
   </div>
-
 </div>
 `;
 document.querySelector("#test").innerHTML = recept;
@@ -102,9 +100,4 @@ function progressJSON(data){
   fetch("eat.json")
   .then(response => response.json())
   .then(responseJSON => progressJSON(responseJSON));
-
-
-
-
-
 
