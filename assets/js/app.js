@@ -1,70 +1,81 @@
+
 function handleRecept(id, all){
   document.getElementById("carouselExampleCaptions").style.visibility = "hidden"; 
   document.getElementById("carouselExampleCaptions").style.display ="none";
   let dish = all[id - 1];
   console.log(dish);
 
-  let recept =
-  ` <h3>
-  ${dish.title}
-  <small class="text-muted">${dish.desc}</small>
-</h3>
+  let recept =`
+<h3>
+${dish.title}
+    <small class="text-muted">${dish.desc}</small>
+  </h3>
   <div>
     <div class="card">
       <img src="img/${dish.img}" class="card-img-top" alt="...">
       <div class="card-body">
-        <p class="card-text">${dish.pic_desc}</p>
+        <p class="card-text">
+        <h2>${dish.pic_desc}</h2>
+        </p>
       </div>
     </div>
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Ingredients
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <ul class="list-group">
+    <div class="container">
+      <div class="row">
+        <div class="col ingre">
+          <h4>Ingredients</h4>
+          <ul class="list-group">
             `
             dish.ingredients.map( i => {
               console.log(`<li class="list-group-item">${i}</li>`)
               recept += `<li class="list-group-item">${i}</li>`;
             });
 
-              recept +=`
-            </ul>
-          </div>
+              recept +=
+`
+          </ul>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Cooking instructions
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
+
+        <div class="col descr">
+          <h4>Cooking description</h4>
+          <p>
           ${dish.instruction}
-          </div>
+          </p>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            DishUp
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-          ${dish.dish_up}
-          </div>
+      <div class="row">
+        <div class="col dishup">
+          <h4 align="center">Dish Up</h4>
+          <p>Tiramisu jelly beans bear claw brownie I love. I love croissant sesame snaps jelly. Jelly croissant chocolate ice cream I love donut.
+            Ice cream jujubes liquorice. Icing caramels brownie liquorice carrot cake chupa chups tootsie roll I love. Pastry pastry chocolate cake.
+            <br><br>
+            Wafer bear claw oat cake I love ice cream. Soufflé pie I love chocolate marshmallow lollipop liquorice.
+            Gingerbread jelly sugar plum. Cotton candy gingerbread caramels. Gummies I love soufflé chupa chups dragée.
+            Bear claw croissant pie dragée cookie I love ice cream cupcake. I love candy canes dessert.
+            Marzipan cupcake cupcake I love caramels I love sweet tiramisu donut. Donut toffee bonbon.
+            Tart carrot cake dragée sesame snaps soufflé I love chocolate cake sweet.
+            <br><br>
+            Sweet roll pudding gingerbread dragée bonbon tootsie roll jelly-o caramels. Jelly-o donut toffee tiramisu I love sweet chocolate bar I love. Chupa chups chupa chups lemon drops muffin. Chocolate bar cotton candy wafer I love. I love
+            gingerbread jelly beans. I love marshmallow liquorice cheesecake. Toffee candy brownie cookie danish croissant jelly. Cake cookie lemon drops candy gingerbread croissant liquorice. Sweet roll jelly beans bonbon chocolate cake I love
+            pastry chupa chups topping muffin. I love soufflé gummi bears fruitcake caramels.
+          </p>
         </div>
       </div>
+
     </div>
-  </div>
-</div>
-`;
+
+
+
+
+
+
+
+
+`
+
+
+
+
+;
 document.querySelector("#test").innerHTML = recept;
 }
 function progressJSON(data){
@@ -79,7 +90,9 @@ function progressJSON(data){
       <p class="card-text">${d.desc}</p>
       <a href="${d.id}" class="btn btn-primary link"> Find the recept</a>
     </div>
-    </div>`;
+    </div>`
+
+    ;
    });
 
    var elements = document.getElementsByClassName('link');
@@ -100,4 +113,9 @@ function progressJSON(data){
   fetch("eat.json")
   .then(response => response.json())
   .then(responseJSON => progressJSON(responseJSON));
+
+
+
+
+
 
