@@ -206,3 +206,7 @@ p, ul li, ol li {
 .descr{
   margin: 30px;
 }
+
+.dishup{
+  justify-content: center;
+}
